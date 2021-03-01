@@ -1,4 +1,4 @@
-FROM ubuntu:latest
-RUN touch test
-ENTRYPOINT [ "ls" ]
-CMD [ "--help" ]
+FROM ubuntu
+RUN mkdir sample_folder
+WORKDIR /sample_folder
+RUN touch sample_file
